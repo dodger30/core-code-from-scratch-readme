@@ -12,4 +12,8 @@
 
 ## 2. Challenge de la Semana (Miercoles)
 
+      - Ejercicio. Ingresar la Fecha de Cumpleaños en una Matriz
+
+      - Ejercicio MIPS.
+
 ## 3. Challenge de la Semana (Jueves)
