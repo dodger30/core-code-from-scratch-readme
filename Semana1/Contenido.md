@@ -17,3 +17,11 @@
       - Ejercicio MIPS.
 
 ## 3. Challenge de la Semana (Jueves)
+
+      - Ejercicio. Escribir Numeros Especiales
+
+      - Ejercicio. Mal Codigo
+
+      - Ejercicio. Mal Codigo 2
+
+      - Realizar Curso de Git
