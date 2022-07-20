@@ -4,7 +4,7 @@
 
       - Crear una explicacion acerca de Lenguages de Programacion Interpretados y Compilados.
 
-Podria decirce que primordialmente la diferencia entre un lenguaje de programacion interpretado y un lenguaje de programacion compilado es que el compilado requiere un paso adicional antes de ser ejecutado, la compilacion que convierte el codigo fuente a lenguaje de maquina. Por otro lado, el lenguaje interpretado es convertido a lenguaje de maquina a medida que es ejecutado.
+**Podria decirce que primordialmente la diferencia entre un lenguaje de programacion interpretado y un lenguaje de programacion compilado es que el compilado requiere un paso adicional antes de ser ejecutado, la compilacion que convierte el codigo fuente a lenguaje de maquina. Por otro lado, el lenguaje interpretado es convertido a lenguaje de maquina a medida que es ejecutado.**
 
       - Es Java compilado o interpretado o ambos? 
 
