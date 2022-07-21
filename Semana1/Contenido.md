@@ -4,13 +4,20 @@
 
       - Crear una explicacion acerca de Lenguages de Programacion Interpretados y Compilados.
 
-**Podria decirce que primordialmente la diferencia entre un lenguaje de programacion interpretado y un lenguaje de programacion compilado es que el compilado requiere un paso adicional antes de ser ejecutado, la compilacion que convierte el codigo fuente a lenguaje de maquina. Por otro lado, el lenguaje interpretado es convertido a lenguaje de maquina a medida que es ejecutado.**
+Podria decirce que primordialmente la diferencia entre un lenguaje de programacion interpretado y un lenguaje de programacion compilado es que el compilado requiere un paso adicional antes de ser ejecutado, la compilacion que convierte el codigo fuente a lenguaje de maquina. Por otro lado, el lenguaje interpretado es convertido a lenguaje de maquina a medida que es ejecutado.
 
       - Es Java compilado o interpretado o ambos? 
 
-**El Lenguaje de Programacion Java es compilado en un archivo .java y a la misma vez este archivo es interpretado por la maquina virtual de Java (JVM).**
+El Lenguaje de Programacion Java es compilado en un archivo .java y a la misma vez este archivo es interpretado por la maquina virtual de Java (JVM).
 
       - Ejercicio en Pseudocodigo conversion de Moneda
+
+         1. Inicio
+         2. ValorEnDolares <-- Obtiene
+         3. TasaDeCambioDiaria <-- Obtiene
+         4. ValorBitcoins <-- ValorEnDolares * TasaDeCambioDiaria
+         5. Mostrar ValorBitcoins
+         6. Fin
 
       - Lenguajes de Bajo y Alto Nivel
 
