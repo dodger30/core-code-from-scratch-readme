@@ -141,15 +141,30 @@ for (let i = 0; i <=100; i++) {
 var cond = false;
 
 //Se corrigio el simbolo = por == ya que el simbolo = es para asignar una variable y el simbolo == es para comparacion
-// linea anterior 
-// if ((cond = true)) {
-if ((cond == true)) {
+// if ((cond = true)) {        Linea Anterior
+if ((cond == true)) {       // Linea Corregida
   console.log('The cond variable is true');
 } else {
   console.log('The cond variable is false');
 }
 ```
 
-      - Ejercicio. Mal Codigo 2
+      - Ejercicio. Crear un codigo con la siguiente logica. Si el Numero es 100 mostrar "This is a special number", Si el numero es menor de 1000 y multiplo de 10 y es diferente a 100 mostrar "Its almost a special number" si no cumple con ninguna condicion mostrar "Just a regular number".
+
+```JavaScript
+var n = 100;
+// var n = 800;
+// var n = 2000;
+
+if (n == 100) {
+  console.log('This is a special number!');
+} else {
+    if ((n < 1000) && (n % 10 == 0)) {
+        console.log('Its almost a Special number!'); 
+    } else {
+        console.log('Just a regular number');
+    }
+}
+```
 
       - Realizar Curso de Git
