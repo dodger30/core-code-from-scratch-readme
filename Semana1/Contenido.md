@@ -123,7 +123,17 @@ Fecha de Cumpleaños = 10 de Marzo de 1971. Conversion de Decimal a Binario a tr
 
 ## 3. Challenge de la Semana (Jueves)
 
-      - Ejercicio. Escribir Numeros Especiales
+      - Ejercicio. Escribir un programa que muestre los numeros pares del 1 al 100.
+
+```JavaScript
+for (let i = 0; i <=100; i++) {
+    // Si la division no contiene residuo indica que es un numero PAR.
+    
+    if (i % 2 == 0)  {
+        console.log(i);
+    }
+}
+```
 
       - Ejercicio. Mal Codigo
 
