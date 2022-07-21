@@ -8,6 +8,8 @@
 
       - Es Java compilado o interpretado o ambos? 
 
+**El Lenguaje de Programacion Java es compilado en un archivo .java y a la misma vez este archivo es interpretado por la maquina virtual de Java (JVM).**
+
       - Ejercicio en Pseudocodigo conversion de Moneda
 
       - Lenguajes de Bajo y Alto Nivel
