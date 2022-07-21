@@ -19,6 +19,7 @@ El Lenguaje de Programacion Java es compilado en un archivo .java y a la misma v
 5. Mostrar ValorBitcoins
 6. Fin
 
+
       - Lenguajes de Bajo y Alto Nivel
 
 El ordenador sólo entiende un lenguaje conocido como código binario o código máquina, consistente en ceros y unos. Es decir, sólo utiliza 0 y 1 para codificar cualquier acción.
