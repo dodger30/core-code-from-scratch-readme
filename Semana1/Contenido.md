@@ -135,7 +135,20 @@ for (let i = 0; i <=100; i++) {
 }
 ```
 
-      - Ejercicio. Mal Codigo
+      - Ejercicio. Encontrar el error del desarrollador que creo el codigo y corrigalo. Explique.
+
+```JavaScript
+var cond = false;
+
+//Se corrigio el simbolo = por == ya que el simbolo = es para asignar una variable y el simbolo == es para comparacion
+// linea anterior 
+// if ((cond = true)) {
+if ((cond == true)) {
+  console.log('The cond variable is true');
+} else {
+  console.log('The cond variable is false');
+}
+```
 
       - Ejercicio. Mal Codigo 2
 
