@@ -1,16 +1,26 @@
 # Introduccion a la Programacion y JavaScript
 
-## - Challenge de la Semana (Martes)
+## 1. Challenge de la Semana (Martes)
 
       - Crear una explicacion acerca de Lenguages de Programacion Interpretados y Compilados.
 
+<details><summary><strong>Respuesta</strong></summary>
+
 Podria decirce que primordialmente la diferencia entre un lenguaje de programacion interpretado y un lenguaje de programacion compilado es que el compilado requiere un paso adicional antes de ser ejecutado, la compilacion que convierte el codigo fuente a lenguaje de maquina. Por otro lado, el lenguaje interpretado es convertido a lenguaje de maquina a medida que es ejecutado.
+
+</details>
 
       - Es Java compilado o interpretado o ambos? 
 
+<details><summary><strong>Respuesta</strong></summary>
+
 El Lenguaje de Programacion Java es compilado en un archivo .java y a la misma vez este archivo es interpretado por la maquina virtual de Java (JVM).
 
+</details>
+
       - Ejercicio. Pseudocodigo conversion de Moneda de Dolares a Bitcoins
+
+<details><summary><strong>Respuesta</strong></summary>
 
 1. Inicio
 2. ValorEnDolares <-- Obtiene
@@ -19,16 +29,24 @@ El Lenguaje de Programacion Java es compilado en un archivo .java y a la misma v
 5. Mostrar ValorBitcoins
 6. Fin
 ---
+
+</details>
       
       - Lenguajes de Bajo y Alto Nivel
 
+<details><summary><strong>Respuesta</strong></summary>
+
 El ordenador sólo entiende un lenguaje conocido como código binario o código máquina, consistente en ceros y unos. Es decir, sólo utiliza 0 y 1 para codificar cualquier acción.
 Los lenguajes más próximos a la arquitectura hardware se denominan lenguajes de bajo nivel y los que se encuentran más cercanos a los programadores y usuarios se denominan lenguajes de alto nivel.
+
+</details>
 
 
 ## 2. Challenge de la Semana (Miercoles)
 
       - Ejercicio. Ingresar la Fecha de Cumpleaños en una Matriz (Convertir decimal a Binario)
+
+<details><summary><strong>Respuesta</strong></summary>
 
 Fecha de Cumpleaños = 10 de Marzo de 1971. Conversion de Decimal a Binario a traves de divisiones:
 
@@ -54,9 +72,11 @@ Fecha de Cumpleaños = 10 de Marzo de 1971. Conversion de Decimal a Binario a tr
 
 1   / 2  = 0   numero Restante = 1    ==>  numero binario 11110110011 
 
+</details>
+
       - Ejercicio MIPS. Crear un programa que sume 2 numeros ingresados por el usuario.
 
-<details><summary>Haz CLICK aca</summary>
+<details><summary><strong>Respuesta.</strong></summary>
 
 ```assembly
 .data
@@ -116,7 +136,7 @@ Fecha de Cumpleaños = 10 de Marzo de 1971. Conversion de Decimal a Binario a tr
 
       - Ejercicio MIPS. Crear un programa que muestre su nombre.
 
-<details><summary>Haz CLICK aca</summary>
+<details><summary><strong>Respuesta</strong></summary>
 
 ```assembly
 .data
@@ -132,6 +152,8 @@ Fecha de Cumpleaños = 10 de Marzo de 1971. Conversion de Decimal a Binario a tr
 
       - Ejercicio. Escribir un programa que muestre los numeros pares del 1 al 100.
 
+<details><summary><strong>Respuesta</strong></summary>
+
 ```JavaScript
 for (let i = 0; i <=100; i++) {
     // Si la division no contiene residuo indica que es un numero PAR.
@@ -142,7 +164,11 @@ for (let i = 0; i <=100; i++) {
 }
 ```
 
+</details>
+
       - Ejercicio. Encontrar el error del desarrollador que creo el codigo y corrigalo. Explique.
+
+<details><summary><strong>Respuesta</strong></summary>
 
 ```JavaScript
 var cond = false;
@@ -156,7 +182,11 @@ if ((cond == true)) {       // Linea Corregida
 }
 ```
 
+</details>
+
       - Ejercicio. Crear un codigo con la siguiente logica. Si el Numero es 100 mostrar "This is a special number", Si el numero es menor de 1000 y multiplo de 10 y es diferente a 100 mostrar "Its almost a special number" si no cumple con ninguna condicion mostrar "Just a regular number".
+
+<details><summary><strong>Respuesta</strong></summary>
 
 ```JavaScript
 var n = 100;
@@ -173,5 +203,7 @@ if (n == 100) {
     }
 }
 ```
+
+</details>
 
       - Realizar Curso de Git
