@@ -56,6 +56,8 @@ Fecha de Cumpleaños = 10 de Marzo de 1971. Conversion de Decimal a Binario a tr
 
       - Ejercicio MIPS. Crear un programa que sume 2 numeros ingresados por el usuario.
 
+<details><summary>Haz CLICK aca</summary>
+
 ```assembly
 .data
 	#Se crean las etiquetas de los mensajes
@@ -110,7 +112,11 @@ Fecha de Cumpleaños = 10 de Marzo de 1971. Conversion de Decimal a Binario a tr
 	li $v0, 10
 	syscall 
 ```
+</details>
+
       - Ejercicio MIPS. Crear un programa que muestre su nombre.
+
+<details><summary>Haz CLICK aca</summary>
 
 ```assembly
 .data
@@ -120,6 +126,7 @@ Fecha de Cumpleaños = 10 de Marzo de 1971. Conversion de Decimal a Binario a tr
         la $a0, nombre
         syscall
 ```
+</details>
 
 ## 3. Challenge de la Semana (Jueves)
 
