@@ -14,7 +14,7 @@ Podria decirce que primordialmente la diferencia entre un lenguaje de programaci
 
 <details><summary><strong>Respuesta</strong></summary>
 
-El Lenguaje de Programacion Java es compilado en un archivo .java y a la misma vez este archivo es interpretado por la maquina virtual de Java (JVM).
+El Lenguaje de Programacion Java es compilado de un archivo .java a un archivo .class y a la misma vez este archivo es interpretado por la maquina virtual de Java (JVM).
 
 </details>
 
@@ -158,7 +158,7 @@ Fecha de Cumpleaños = 10 de Marzo de 1971. Conversion de Decimal a Binario a tr
 for (let i = 0; i <=100; i++) {
     // Si la division no contiene residuo indica que es un numero PAR.
     
-    if (i % 2 == 0)  {
+    if (i % 2 === 0)  {
         console.log(i);
     }
 }
@@ -189,19 +189,18 @@ if ((cond == true)) {       // Linea Corregida
 <details><summary><strong>Respuesta</strong></summary>
 
 ```JavaScript
-var n = 100;
+//var n = 100;
 // var n = 800;
-// var n = 2000;
+var n = 2000;
 
 if (n == 100) {
   console.log('This is a special number!');
-} else {
-    if ((n < 1000) && (n % 10 == 0)) {
-        console.log('Its almost a Special number!'); 
-    } else {
-        console.log('Just a regular number');
+} else if ((n < 1000) && (n % 10 === 0)) {
+          console.log('Its almost a Special number!'); 
+    }  else {
+          console.log('Just a regular number');
     }
-}
+    
 ```
 
 </details>
