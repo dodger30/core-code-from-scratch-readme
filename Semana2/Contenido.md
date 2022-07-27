@@ -6,6 +6,12 @@
 
         - Crear una cuenta de Codewars
 
+<details><summary><strong>Respuesta</strong></summary>
+
+![Usuario en CodeWars](CuentaCodewars.jpg)
+
+</details>
+
         - Comando If - Else
 
         - Comando for
