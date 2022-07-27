@@ -41,6 +41,26 @@ function multiply(a, b){
 
         - Ejercicio. ASCII Total
 
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+function uniTotal (string) {
+// Convirtiendo de String a Codigo ASCII
+  let Cadena = 0;
+  
+  if (string != "")
+    for (let i=0; i<string.length; i++) {
+      Cadena = Cadena + string.charCodeAt(i);
+    }
+    
+  return Cadena;
+}
+
+```
+
+</details>
+
 ## 3. Challenge de la Semana (Miercoles)
 
         - Continuar con el curso de HTML
