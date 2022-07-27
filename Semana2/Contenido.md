@@ -73,6 +73,21 @@ function uniTotal (string) {
 
         - Ejercicio. Char a Valor ASCII
 
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+function getChar(c){
+  // Funcion para convertir un valor entero a Codigo ASCII
+  
+  caracter = String.fromCharCode(c);
+  return caracter;
+}
+
+```
+
+</details>
+
         - Ejercicio. Suma Binaria
 
 ## 4. Challenge de la Semana (Jueves)
