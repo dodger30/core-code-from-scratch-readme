@@ -18,7 +18,26 @@
 
         - Iniciar el Curso de HTML
 
+<details><summary><strong>Respuesta</strong></summary>
+
+![Inicio del Curso HTML](CursoHTMLIntro.jpg)
+
+</details>
+
         - Ejercicio. Multiplicacion
+
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+function multiply(a, b){
+  //Se modifico la funcion para que regresara el resultado de la multiplicacion.
+  return (a * b);
+}
+
+```
+
+</details>
 
         - Ejercicio. ASCII Total
 
