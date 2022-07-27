@@ -96,6 +96,28 @@ function getChar(c){
 
         - Ejercicio. Suma Binaria
 
+        - Ejercicio. Nota Final del Estudiante
+
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+function finalGrade (exam, projects) {
+  let nota_final = 0
+  
+  if ((exam >90) || (projects >10)) {
+    nota_final = 100
+  } else if ((exam >75) && (projects >=5)) {
+    nota_final = 90
+  } else if ((exam >50) && (projects >=2)) {
+    nota_final = 75
+  }   
+  return nota_final     // final grade
+}
+
+```
+</details>
+
 ## 4. Challenge de la Semana (Jueves)
 
         - Continuar con el curso de HTML
