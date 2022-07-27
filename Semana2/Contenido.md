@@ -65,6 +65,12 @@ function uniTotal (string) {
 
         - Continuar con el curso de HTML
 
+<details><summary><strong>Respuesta</strong></summary>
+
+![Continuacion Curso HTML](CursoHTMLVSCode.jpg)
+
+</details>
+
         - Ejercicio. Char a Valor ASCII
 
         - Ejercicio. Suma Binaria
