@@ -286,3 +286,24 @@ function validSpacing(s) {
 </details>
 
         - Ejercicio. Fake Binary
+
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+function fakeBin(x){
+  let numero = '';
+  
+  for (let i = 0; i <= x.length -1; i++) {
+    if (x[i] <5 ) {
+      numero = numero + '0';
+    } else {
+      numero = numero + '1';
+    }
+  }
+  return numero;
+}
+
+```
+
+</details>
