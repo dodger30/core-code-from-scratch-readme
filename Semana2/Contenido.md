@@ -146,6 +146,12 @@ function finalGrade (exam, projects) {
 
         - Continuar con el curso de HTML
 
+<details><summary><strong>Respuesta</strong></summary>
+
+![Continuacion Curso HTML](CursoHTMLWebSite.jpg)
+
+</details>
+
         - Ejercicio. Remover puntos de exclamacion.
 
         - Ejercicio. Remover Vowel
