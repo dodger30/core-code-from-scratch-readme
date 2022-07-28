@@ -4,6 +4,12 @@
 
         - Continuar con el Curso de Git
 
+<details><summary><strong>Respuesta</strong></summary>
+
+![Curso Git](GitHub1.jpg)
+
+</details>
+
         - Crear una cuenta de Codewars
 
 <details><summary><strong>Respuesta</strong></summary>
@@ -19,6 +25,7 @@
 La expresión IF THEN ELSE puede definirse de dos maneras:
 
 IF (condición booleana) THEN (valor verdadero) ELSE (valor falso) ENDIF: el resultado devuelto dependerá de si la condición se cumple o no.
+
 IF (condición booleana) THEN (valor verdadero) ENDIF: el resultado devuelto siempre será el resultado verdadero. Si la expresión condicional no se cumple, el resultado estará vacío.
 
 </details>
