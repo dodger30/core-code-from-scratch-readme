@@ -14,11 +14,50 @@
 
         - Comando If - Else
 
+<details><summary><strong>Respuesta</strong></summary>
+
+La expresión IF THEN ELSE puede definirse de dos maneras:
+
+IF (condición booleana) THEN (valor verdadero) ELSE (valor falso) ENDIF: el resultado devuelto dependerá de si la condición se cumple o no.
+IF (condición booleana) THEN (valor verdadero) ENDIF: el resultado devuelto siempre será el resultado verdadero. Si la expresión condicional no se cumple, el resultado estará vacío.
+
+</details>
+
         - Comando for
+
+<details><summary><strong>Respuesta</strong></summary>        
+
+los bucles (ciclos) son utilizados para realizar tareas repetitivas con base en una condición. Las condiciones típicamente devuelven true (verdadero) o false(falso) al ser evaluados. El bucle continuará ejecutándose hasta que la condición devuelva  false.
+
+Sintaxis:
+
+for ([initializacion]); [condicion]; [expresion-final]) {
+   // sentencias
+}
+
+</details>
 
         - Comando While
 
+<details><summary><strong>Respuesta</strong></summary>
+
+El bucle while empieza por evaluar la condición. Si la condición es verdadera (devuelve true), entonces las sentencias son ejecutadas. Si la condición es falsa (devuelve false), entonces las sentencias no son ejecutadas. Luego el bucle finaliza.
+
+Sintaxis:
+while (condicion)
+{
+  sentencia(s);
+}
+
+</details>
+
         - Funciones
+
+<details><summary><strong>Respuesta</strong></summary>
+
+Una función es un conjunto de instrucciones que se agrupan para realizar una tarea concreta y que se pueden reutilizar fácilmente.
+
+</details>
 
 ## 2. Challenge de la Semana (Martes)
 
