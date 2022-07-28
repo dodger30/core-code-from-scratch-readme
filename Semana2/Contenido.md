@@ -242,6 +242,23 @@ const rps = (p1, p2) => {
 
         - Ejercicio. Twice as Old
 
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  // Calcular hace cuantos años el padre tuvo el doble de la edad del hijo o en cuantos años lo tendra.
+  var fecha = (dadYearsOld - sonYearsOld * 2);
+  if (fecha < 0) {
+    fecha = fecha * -1;
+  }
+  return fecha;
+}
+
+```
+
+</details>
+
         - Ejercicio. Valid Spacing
 
         - Ejercicio. Fake Binary
