@@ -29,3 +29,5 @@
     - Ejercicio. Doblar un Vector
 
     - Ejercicio. Encripta esto!
+
+    - Completa tu 1er Core Challenge
