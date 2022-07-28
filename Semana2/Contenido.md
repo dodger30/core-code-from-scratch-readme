@@ -240,6 +240,27 @@ const rps = (p1, p2) => {
 
         - Ejercicio. Holiday VIII - Duty Free
 
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+function dutyFree(normPrice, discount, hol){
+  let costo = 0;
+  
+  // Si el descuento es 0, solo dividimos el precio entre 100
+  if (discount == 0) {
+    costo = (normPrice) / 100;  
+  } else {
+    costo = (normPrice * discount) / 100;
+  }
+  
+  respuesta = parseInt(hol / costo);
+  return respuesta;
+}
+
+```
+</details>
+
         - Ejercicio. Twice as Old
 
 <details><summary><strong>Respuesta</strong></summary>
