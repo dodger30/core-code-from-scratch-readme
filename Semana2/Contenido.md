@@ -148,11 +148,41 @@ function finalGrade (exam, projects) {
 
 <details><summary><strong>Respuesta</strong></summary>
 
-![Continuacion Curso HTML](CursoHTMLWebSite.jpg)
+![Continuacion Curso HTML](CursoHTMWebSite.jpg)
 
 </details>
 
         - Ejercicio. Remover puntos de exclamacion.
+
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+function remove (string) {  
+  string2 = '';
+  
+  // Verificamos si al menos contiene el simbolo '!' al final de la cadena
+  if (string.lastIndexOf("!") == string.length -1 ) {
+    ultimo = string.length;
+    var i = string.length -1;
+    while (i >= 0) {
+       if (string[i] == "!") {
+         ultimo = i; 
+       } else {
+           break;
+       }
+      i--;
+    }
+    string2 = string.substring(0,ultimo);
+  } else {
+    string2 = string;
+  }
+  return string2;
+}
+
+```
+
+</details>
 
         - Ejercicio. Remover Vowel
 
