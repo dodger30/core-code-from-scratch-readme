@@ -261,4 +261,28 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 
         - Ejercicio. Valid Spacing
 
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+function validSpacing(s) {
+  // Validar que exista espacio en blanco
+  
+  posicion = s.indexOf(' ');
+  if (posicion === -1) { //Preguntamos si No existe algun espacio en BLANCO
+    respuesta = true;
+  } else if (s[0] == ' ' || s[s.length-1] == ' ') {
+      respuesta = false;
+  } else if (s.indexOf('  ') == -1) {
+    respuesta = true;
+  } else {
+    respuesta = false;
+  }
+  return respuesta;
+}
+
+```
+
+</details>
+
         - Ejercicio. Fake Binary
