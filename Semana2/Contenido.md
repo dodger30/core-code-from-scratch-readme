@@ -1,4 +1,4 @@
-# JavaScript
+# JavaScript - Parte 1
 
 ## 1. Challenge de la Semana (Lunes)
 
