@@ -200,6 +200,40 @@ function shortcut(string){
 
         - Ejercicio. Piedra, Papel o Tijera
 
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+const rps = (p1, p2) => {
+  var winner = "";
+  if (p1 === p2) {
+    winner = "Draw!";
+  } else if (p1 === "rock") {
+      if (p2 === "paper") {
+        winner = "Player 2 won!";
+      } else {
+        winner = "Player 1 won!";
+      }
+    } else if (p1 === "paper") {
+      if (p2 === "rock") {
+        winner = "Player 1 won!";
+      } else {
+        winner = "Player 2 won!";
+      }
+    } else {
+      if (p2 === "paper") {
+        winner = "Player 1 won!";
+      } else { 
+        winner = "Player 2 won!";
+      }
+    }
+    return winner;
+  }
+
+```
+
+</details>
+
         - Ejercicio. Bugger Persistente
 
 ## 5. Ejercicios Extra 
