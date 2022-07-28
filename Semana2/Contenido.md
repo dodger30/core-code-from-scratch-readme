@@ -186,6 +186,18 @@ function remove (string) {
 
         - Ejercicio. Remover Vowel
 
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+function shortcut(string){
+  return string.replace(/[aeiou]/g,'')
+}
+
+```
+
+</details>
+
         - Ejercicio. Piedra, Papel o Tijera
 
         - Ejercicio. Bugger Persistente
