@@ -60,6 +60,31 @@ var countBits = function(n) {
 
     - Ejercicio. Simple Cerdo Latino
 
+<details><summary><strong>Respuesta</strong></summary>    
+
+```JavaScript
+
+function pigIt(str){
+  let vector = str.split(' ');
+  let vector2 = [];
+  
+  for (let i=0; i < vector.length; i++) {
+    // Verifico que no traiga signos de puntuacion
+    if (vector[i].substring(0,1) === "!" || vector[i].substring(0,1) === "?" ) {
+      final = vector[i].substring(0,1);
+    } else {
+      final = vector[i].substring(0,1) + 'ay';
+    }
+    vector2[i] = vector[i].substring(1,vector[i].length) + final;
+  }
+  let nueva = vector2.join(' ');
+  return nueva;
+}
+
+```
+
+</details>
+
     - Ejercicio. Contando Duplicados
 
     - Ejercicio. Decofificar el Codigo Morse
