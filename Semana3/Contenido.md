@@ -35,6 +35,25 @@ function likes(names) {
 
     - Ejercicio. Contando Bits
 
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+var countBits = function(n) {
+  let binario = Math.abs(n).toString(2);
+  contador = 0;
+  for(var i = 0; i < binario.length; i++) {
+	  if (binario[i] === "1") {
+      contador++;
+    }
+  }
+  return contador ;
+};
+
+```
+
+</details>
+
     - Ejercicio. Su orden, Por Favor!
 
 ## 2. Challenges de la Semana (Martes)
