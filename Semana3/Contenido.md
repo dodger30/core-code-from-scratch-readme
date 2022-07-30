@@ -204,6 +204,33 @@ function toCamelCase(str){
 
     - Ejercicio. Unico en el Orden
 
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+var uniqueInOrder=function(iterable){
+  //your code here - remember iterable can be a string or an array
+  let cadena = [];
+   
+  if (typeof(iterable) === 'string') {  // Si es string lo convierto a Array
+    arreglo = [...iterable];
+  } else {
+    arreglo = iterable;
+  }
+   
+  for (let i=0; i< arreglo.length; i++) {
+    if ( arreglo[i+1] != arreglo[i] ) {
+      cadena.push(arreglo[i]);
+    }
+  }
+
+  return cadena;
+}
+
+```
+
+</details>
+
 ## 4. Challenges de la Semana (Jueves)
 
     - Ejercicio. Doblar un Vector
