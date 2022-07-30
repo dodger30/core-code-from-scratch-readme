@@ -181,6 +181,27 @@ function validParentheses(parens) {
 
     - Ejercicio. Convertir String a Camel Case
 
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+function toCamelCase(str){
+  let arreglo = str.split(/_|-/);
+  let palabra = "";
+  
+  for (let i = 0; i < arreglo.length; i++) {
+    if ( i != 0 ) {
+     arreglo[i] = arreglo[i].charAt(0).toUpperCase() + arreglo[i].slice(1); 
+    }
+    palabra = palabra + arreglo[i];
+  }
+  return palabra;
+}
+
+```
+
+</details>
+
     - Ejercicio. Unico en el Orden
 
 ## 4. Challenges de la Semana (Jueves)
