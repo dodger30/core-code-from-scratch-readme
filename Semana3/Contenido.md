@@ -237,4 +237,42 @@ var uniqueInOrder=function(iterable){
 
     - Ejercicio. Encripta esto!
 
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+var encryptThis = function(text) {
+  let respuesta;
+  let arreglo = text.split(" ");
+  let cadena = [];
+  
+  for (let i=0; i<arreglo.length; i++) {
+    respuesta = "";
+    
+    switch (arreglo[i].length) {
+      case 1:
+        respuesta = arreglo[i].charCodeAt(0);
+        break;
+      case 2:
+        respuesta =  arreglo[i].charCodeAt(0) + arreglo[i].slice(arreglo[i].length-1,arreglo[i].length);
+        break;
+      case 3:
+        respuesta =  arreglo[i].charCodeAt(0) + arreglo[i].slice(arreglo[i].length-1,arreglo[i].length) + arreglo[i].substring(1,2);
+        break;
+      default:
+        respuesta =  arreglo[i].charCodeAt(0) +  
+                     arreglo[i].slice(arreglo[i].length-1,arreglo[i].length) + 
+                     arreglo[i].substring(2,arreglo[i].length - 1) +
+                     arreglo[i].substring(1,2);
+        break;
+    }
+    cadena.push(respuesta);
+  }
+  return cadena.join(' ');
+}
+
+```
+
+</details>
+
     - Completa tu 1er Core Challenge
