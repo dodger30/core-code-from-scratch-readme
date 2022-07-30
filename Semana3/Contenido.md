@@ -87,6 +87,34 @@ function pigIt(str){
 
     - Ejercicio. Contando Duplicados
 
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+function duplicateCount(text){
+  //Inicializamos las variables y ordenamos el arreglo
+  text = text.toLowerCase();
+  arreglo = text.split('').sort();
+  let repetidos = [];
+  let contador = 1;
+  
+  for ( let i=0; i < arreglo.length; i++ ) {
+    if ( arreglo[i] === arreglo[i+1]) {
+      contador++;
+    } else {
+      if (contador > 1) {
+        repetidos.push(contador);
+      }
+      contador = 1;
+    }
+  }
+  return repetidos.length;
+}
+
+```
+
+</details>
+
     - Ejercicio. Decofificar el Codigo Morse
 
 ## 3. Challenges de la Semana (Miercoles)
