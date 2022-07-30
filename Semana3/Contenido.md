@@ -148,6 +148,37 @@ function duplicateCount(text){
 
     - Ejercicio. Validar Parentesis
 
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+function validParentheses(parens) {
+  //Inicializamos variables
+  let abiertos =0;
+  let respuesta = false;
+  
+  for (let i = 0; i < parens.length; i++) {
+    if (parens[i] === '(' ) {
+      abiertos++;
+    } 
+    if (parens[i] === ')') {
+      abiertos--;
+    }
+    if (abiertos < 0 ) {
+      return respuesta;
+    }
+  }
+  
+  if (abiertos === 0 ) {
+    respuesta = true;
+  } 
+  return respuesta;
+}
+
+```
+
+</details>
+
     - Ejercicio. Convertir String a Camel Case
 
     - Ejercicio. Unico en el Orden
