@@ -56,6 +56,33 @@ var countBits = function(n) {
 
     - Ejercicio. Su orden, Por Favor!
 
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+function order(words){
+  // Inicializamos el Array
+  if (words === "" ) {
+    return "";
+  } else {
+    arreglo = words.split(' ');
+    arreglo2 = [];
+  
+    for (let i=1; i < 10; i++) {
+      for (let j=0; j < arreglo.length; j++) {
+        if (arreglo[j].indexOf(i) != -1) {
+          arreglo2.push(arreglo[j]);
+        }
+      }
+    }
+    return arreglo2.join(' '); 
+  }
+}
+
+```
+
+</details>
+
 ## 2. Challenges de la Semana (Martes)
 
     - Ejercicio. Simple Cerdo Latino
