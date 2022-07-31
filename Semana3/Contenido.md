@@ -144,6 +144,33 @@ function duplicateCount(text){
 
     - Ejercicio. Decofificar el Codigo Morse
 
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+var MORSE_CODE = {".-": "A", "-...":"B", "-.-.": "C", "-..": "D", ".":"E", "..-.":"F", "--.":"G", "....":"H", "..":"I", ".---":"J", "-.-":"K", ".-..":"L", "--":"M", "-.":"N", "---":"O", ".--.":"P", "--.-":"Q", ".-.":"R", "...":"S", "-":"T", "..-":"U", "...-":"V", ".--":"W", "-..-":"X", "-.--":"Y", "--..":"Z", ".----":"1", "..---":"2", "...--":"3", "....-":"4", ".....":"5", "-....":"6", "--...":"7", "---..":"8", "----.":"9", "-----":"0", "...---...":"SOS", "-.-.--":"!", ".-.-.-":"."};
+
+var decodeMorse = function(morseCode){
+  var palabras = (morseCode).split('   ');
+  var letras = palabras.map((w) => w.split(' '));
+  var decoded = [];
+
+  for(var i = 0; i < letras.length; i++){
+    decoded[i] = [];
+    for(var x = 0; x < letras[i].length; x++){
+        if(MORSE_CODE[letras[i][x]]  && typeof MORSE_CODE[letras[i][x]] != 'undefined'){
+            decoded[i].push( MORSE_CODE[letras[i][x]] );
+        }
+    }
+  }
+
+  return decoded.map(arr => arr.join('')).join(' ').replace(/  /g, ' ').trim();
+}
+
+```
+
+</details>
+
 ## 3. Challenges de la Semana (Miercoles)
 
     - Ejercicio. Validar Parentesis
