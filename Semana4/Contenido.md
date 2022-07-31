@@ -36,8 +36,52 @@
 
     - Validacion Simple de un usuario
 
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+function validateUsr(username) {
+  // Validando que sean letras minusculas, numeros o guion bajo. 
+  // Minimo 4 Caracteres Maximo 16 Caracteres
+  
+  const ExpresionRegular = /^[a-z0-9_]{4,16}$/;
+  return ExpresionRegular.test(username);
+
+}
+
+```
+
+</details>
+
     - Obtener un numero desde un String
 
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+function getNumberFromString(s) {
+  //Se define la expresion regular elimine los caracteres que no son digitos del String
+  return Number(s.replace(/\D/g, ''));
+}
+
+```
+
+</details>
+
     - Limpiando un String
+
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+function stringClean(s){
+  // Regex Expression para eliminar los numeros de la cadena
+  let pattern = /[^A-Za-z ~#$%()^&*@:;"'.,!?]/g;
+  return result = (s.replace(pattern,''))
+}
+
+```
+
+</details>
 
     - Validacion de Contraseña
