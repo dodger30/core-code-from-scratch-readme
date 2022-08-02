@@ -280,7 +280,37 @@ const rps = (p1, p2) => {
 
 </details>
 
-        - Ejercicio. Bugger Persistente
+        - Ejercicio. Bugger 
+
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+Persistentefunction persistence(num) {  
+  let string = num.toString();
+  let digitos = string.length;
+  let contador = 0;
+  let resultado = 1;
+  
+  while(digitos > 1) {
+    resultado = 1;
+    for(let i = 0; i <= string.length-1; i++) {
+      resultado *= Number(string[i]);
+    }
+    num = resultado;
+    contador++;
+    string = num.toString();
+    digitos = string.length;
+  }
+  //devolvemos la respuesta con el numero de veces que realizo la multiplicacion
+  return contador;
+}
+
+```
+
+</details>
+
+
 
 ## 5. Ejercicios Extra 
 
