@@ -85,3 +85,13 @@ function stringClean(s){
 </details>
 
     - Validacion de Contraseña
+
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+const REGEXP = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,})")";
+
+```
+
+</deteails>
