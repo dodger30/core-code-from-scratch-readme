@@ -97,11 +97,10 @@ function pigIt(str){
   
   for (let i=0; i < vector.length; i++) {
     // Verifico que no traiga signos de puntuacion
-    if (vector[i].substring(0,1) === "!" || vector[i].substring(0,1) === "?" ) {
-      final = vector[i].substring(0,1);
-    } else {
-      final = vector[i].substring(0,1) + 'ay';
-    }
+    final = (vector[i].substring(0,1) === "!" || vector[i].substring(0,1) === "?" ) 
+      ? vector[i].substring(0,1)
+      : vector[i].substring(0,1) + 'ay';
+    
     vector2[i] = vector[i].substring(1,vector[i].length) + final;
   }
   let nueva = vector2.join(' ');
@@ -236,21 +235,19 @@ function toCamelCase(str){
 ```JavaScript
 
 var uniqueInOrder=function(iterable){
-  //your code here - remember iterable can be a string or an array
+  //remember iterable can be string or an array
   let cadena = [];
    
-  if (typeof(iterable) === 'string') {  // Si es string lo convierto a Array
-    arreglo = [...iterable];
-  } else {
-    arreglo = iterable;
-  }
+  // Si es string lo convierto a Array
+  let arreglo = (typeof(iterable) === 'string')   
+    ? [...iterable]
+    : iterable;
    
   for (let i=0; i< arreglo.length; i++) {
     if ( arreglo[i+1] != arreglo[i] ) {
       cadena.push(arreglo[i]);
     }
   }
-
   return cadena;
 }
 
