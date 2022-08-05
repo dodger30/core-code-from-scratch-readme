@@ -234,7 +234,7 @@ function toCamelCase(str){
 ```JavaScript
 
 var uniqueInOrder=function(iterable){
-  //remember iterable can be string or an array
+  //your code here - remember iterable can be a string or an array
   let cadena = [];
    
   // Si es string lo convierto a Array
@@ -243,9 +243,7 @@ var uniqueInOrder=function(iterable){
     : iterable;
    
   for (let i=0; i< arreglo.length; i++) {
-    if ( arreglo[i+1] != arreglo[i] ) {
-      cadena.push(arreglo[i]);
-    }
+    if ( arreglo[i+1] != arreglo[i] ) cadena.push(arreglo[i]);
   }
   return cadena;
 }
