@@ -254,27 +254,20 @@ const rps = (p1, p2) => {
   var winner = "";
   if (p1 === p2) {
     winner = "Draw!";
-  } else if (p1 === "rock") {
-      if (p2 === "paper") {
-        winner = "Player 2 won!";
-      } else {
-        winner = "Player 1 won!";
-      }
-    } else if (p1 === "paper") {
-      if (p2 === "rock") {
-        winner = "Player 1 won!";
-      } else {
-        winner = "Player 2 won!";
-      }
-    } else {
-      if (p2 === "paper") {
-        winner = "Player 1 won!";
-      } else { 
-        winner = "Player 2 won!";
-      }
+  } else {
+    switch(p1) {
+      case "rock":
+        winner = (p2 === "paper") ? "Player 2 won!" : "Player 1 won!";
+        break;
+      case "paper":
+        winner = (p2 === "rock") ? "Player 1 won!" : "Player 2 won!";
+        break;
+      default:
+        winner = (p2 === "paper") ? "Player 1 won!" : "Player 2 won!";
     }
-    return winner;
   }
+  return winner;
+}
 
 ```
 
