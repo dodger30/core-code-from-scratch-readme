@@ -12,20 +12,21 @@ function likes(names) {
   let personas = names.length;
   let respuesta = "";
   
-  if (personas === 0) {
-    respuesta = "no one likes this";
-  }
-  if (personas === 1) {
-    respuesta = `${names[0]} likes this`;
-  }
-  if (personas === 2) {
-    respuesta = `${names[0]} and ${names[1]} like this`;
-  }
-  if (personas === 3) {
-    respuesta = `${names[0]}, ${names[1]} and ${names[2]} like this`;
-  } 
-  if (personas > 3) {
-    respuesta = `${names[0]}, ${names[1]} and ${personas - 2} others like this`;
+  switch(personas) {
+      case 0:
+        respuesta = "no one likes this";
+        break;
+      case 1:
+        respuesta = `${names[0]} likes this`;
+        break;
+      case 2:
+        respuesta = `${names[0]} and ${names[1]} like this`;
+        break;
+      case 3:
+        respuesta = `${names[0]}, ${names[1]} and ${names[2]} like this`;
+        break
+      default:
+        respuesta = `${names[0]}, ${names[1]} and ${personas - 2} others like this`;  
   }
   return respuesta;
 }
