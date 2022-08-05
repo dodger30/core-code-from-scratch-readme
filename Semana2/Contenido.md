@@ -385,11 +385,7 @@ function fakeBin(x){
   let numero = '';
   
   for (let i = 0; i <= x.length -1; i++) {
-    if (x[i] <5 ) {
-      numero = numero + '0';
-    } else {
-      numero = numero + '1';
-    }
+    numero = (x[i] < 5) ? numero + '0' : numero + '1'
   }
   return numero;
 }
