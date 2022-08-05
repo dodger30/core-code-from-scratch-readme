@@ -286,7 +286,7 @@ const rps = (p1, p2) => {
 
 ```JavaScript
 
-Persistentefunction persistence(num) {  
+function persistence(num) {  
   let string = num.toString();
   let digitos = string.length;
   let contador = 0;

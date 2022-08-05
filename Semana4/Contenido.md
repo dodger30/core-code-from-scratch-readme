@@ -94,4 +94,4 @@ const REGEXP = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])
 
 ```
 
-</deteails>
+</details>
