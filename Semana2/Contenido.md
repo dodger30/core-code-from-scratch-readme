@@ -99,14 +99,14 @@ function multiply(a, b){
 
 function uniTotal (string) {
 // Convirtiendo de String a Codigo ASCII
-  let Cadena = 0;
+  let CadenaEnASCII = 0;
   
   if (string != "")
     for (let i=0; i<string.length; i++) {
-      Cadena = Cadena + string.charCodeAt(i);
+      CadenaEnASCII += string.charCodeAt(i);
     }
     
-  return Cadena;
+  return CadenaEnASCII;
 }
 
 ```
