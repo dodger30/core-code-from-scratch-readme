@@ -256,6 +256,42 @@ var uniqueInOrder=function(iterable){
 
     - Ejercicio. Doblar un Vector
 
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+function foldArray(array, runs)
+{
+  let copia = array.concat();
+  let num = 0; 
+  let temporal = '';
+  
+  // Realizamos iteraciones en base al parametro 'runs'
+  for (let j = 0; j < runs; j++) {
+    num = array.length / 2;
+    temporal = [];
+    odd = ( num % 2 );
+    
+    //Verificamos si la cantidad de elementos es par o impar
+    if (odd % 2 !== 0) {
+      num = Math.trunc(num);
+    }
+    for (let i=0; i <= num - 1; i++) {
+      temporal[i] = array[i] + array[array.length - (i + 1)]
+    }
+    if (odd % 2 !== 0 && odd !== 1 ) {
+      temporal.push(array[num]);
+    }
+    array = [];
+    array = temporal.concat();
+  }
+  return array;
+}
+
+```
+</details>
+
+
     - Ejercicio. Encripta esto!
 
 <details><summary><strong>Respuesta</strong></summary>
