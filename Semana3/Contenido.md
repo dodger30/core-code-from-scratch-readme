@@ -183,8 +183,7 @@ function validParentheses(parens) {
     if (abiertos < 0 ) return false;
   }
   
-  const respuesta = (abiertos === 0 ) ?  true : false;
-  return respuesta;
+  return (abiertos === 0 ) ?  true : false;
 }
 
 ```
