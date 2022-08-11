@@ -201,10 +201,8 @@ function toCamelCase(str){
   let palabra = "";
   
   for (let i = 0; i < arreglo.length; i++) {
-    if ( i != 0 ) {
-     arreglo[i] = arreglo[i].charAt(0).toUpperCase() + arreglo[i].slice(1); 
-    }
-    palabra = palabra + arreglo[i];
+    if ( i != 0 )  arreglo[i] = arreglo[i].charAt(0).toUpperCase() + arreglo[i].slice(1); 
+    palabra += arreglo[i];
   }
   return palabra;
 }
