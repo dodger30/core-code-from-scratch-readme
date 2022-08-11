@@ -351,18 +351,16 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 
 function validSpacing(s) {
   // Validar que exista espacio en blanco
-  
   posicion = s.indexOf(' ');
   if (posicion === -1) { //Preguntamos si No existe algun espacio en BLANCO
-    respuesta = true;
+    return true;
   } else if (s[0] == ' ' || s[s.length-1] == ' ') {
-      respuesta = false;
+      return false;
   } else if (s.indexOf('  ') == -1) {
-    respuesta = true;
+    return true;
   } else {
-    respuesta = false;
+    return false;
   }
-  return respuesta;
 }
 
 ```
