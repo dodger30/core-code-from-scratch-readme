@@ -146,21 +146,21 @@ function getChar(c){
 
 ```JavaScript
 
+function stringInvertido(texto) {
+     return texto.split('').reverse().join('');
+}
+
 function addBinary(a,b) {
-  var resultado = (a + b);
-  var cadena = '';
-  var cadena2 = '';
+  let resultado = a + b;
+  let cadena = '';
   
   do {
      residuo = (resultado % 2);
-     cadena = cadena + residuo;
+     cadena += residuo;
      resultado = Math.trunc(resultado/2);
   } while (resultado !== 0);
   
-  for (var i=cadena.length - 1; i >= 0; i--) {
-    cadena2 = cadena2 + cadena[i];
-  }
-  return cadena2;
+  return stringInvertido(cadena);;
 }
 
 ```
