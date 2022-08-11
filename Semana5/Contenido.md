@@ -26,6 +26,39 @@
 
     - Ejercicio. Encuentra la Letra Faltante
 
+<details><summary><strong>Respuesta</strong></summary>
+
+```JavaScript
+
+function findMissingLetter(array)
+{
+  const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+  const alfabeto = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+  
+  
+  if (alphabet.includes(array[0])) {
+    let pos = alphabet.indexOf(array[0]);
+    
+    for (let i=0; i<array.length; i++) {
+      if (!(alphabet[i+pos] === array[i])) {
+        return alphabet[i+pos];
+      }
+    }
+  } else {
+    let pos = alfabeto.indexOf(array[0]);
+    
+    for (let i=0; i<array.length; i++) {
+      if (!(alfabeto[i+pos] === array[i])) {
+        return alfabeto[i+pos];
+      } 
+    }
+  }
+}
+
+```
+
+</details>
+
     - Ejercicio. Reversa o Rotacion?
 
     - Ejercicio. Cual es tu Veneno?

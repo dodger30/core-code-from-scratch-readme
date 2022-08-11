@@ -104,8 +104,7 @@ function pigIt(str){
     
     vector2[i] = vector[i].substring(1,vector[i].length) + final;
   }
-  let nueva = vector2.join(' ');
-  return nueva;
+  return vector2.join(' ');
 }
 
 ```
@@ -120,19 +119,16 @@ function pigIt(str){
 
 function duplicateCount(text){
   //Inicializamos las variables y ordenamos el arreglo
-  text = text.toLowerCase();
-  arreglo = text.split('').sort();
+  arreglo = text.toLowerCase().split('').sort();
   let repetidos = [];
   let contador = 1;
   
   for ( let i=0; i < arreglo.length; i++ ) {
     if ( arreglo[i] === arreglo[i+1]) {
       contador++;
-    } else {
-      if (contador > 1) {
+    } else if (contador > 1) {
         repetidos.push(contador);
-      }
-      contador = 1;
+        contador = 1; 
     }
   }
   return repetidos.length;
@@ -180,23 +176,14 @@ var decodeMorse = function(morseCode){
 function validParentheses(parens) {
   //Inicializamos variables
   let abiertos =0;
-  let respuesta = false;
   
   for (let i = 0; i < parens.length; i++) {
-    if (parens[i] === '(' ) {
-      abiertos++;
-    } 
-    if (parens[i] === ')') {
-      abiertos--;
-    }
-    if (abiertos < 0 ) {
-      return respuesta;
-    }
+    (parens[i] === '(' ) ? abiertos++: abiertos--;
+    
+    if (abiertos < 0 ) return false;
   }
   
-  if (abiertos === 0 ) {
-    respuesta = true;
-  } 
+  const respuesta = (abiertos === 0 ) ?  true : false;
   return respuesta;
 }
 
@@ -273,15 +260,14 @@ function foldArray(array, runs)
     odd = ( num % 2 );
     
     //Verificamos si la cantidad de elementos es par o impar
-    if (odd % 2 !== 0) {
-      num = Math.trunc(num);
-    }
+    if (odd % 2 !== 0) num = Math.trunc(num);
+    
     for (let i=0; i <= num - 1; i++) {
       temporal[i] = array[i] + array[array.length - (i + 1)]
     }
-    if (odd % 2 !== 0 && odd !== 1 ) {
-      temporal.push(array[num]);
-    }
+    
+    if (odd % 2 !== 0 && odd !== 1 ) temporal.push(array[num]);
+    
     array = [];
     array = temporal.concat();
   }
