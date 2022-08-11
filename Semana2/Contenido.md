@@ -251,7 +251,7 @@ function shortcut(string){
 ```JavaScript
 
 const rps = (p1, p2) => {
-  var winner = "";
+  let winner = "";
   if (p1 === p2) {
     winner = "Draw!";
   } else {
@@ -314,17 +314,11 @@ function persistence(num) {
 ```JavaScript
 
 function dutyFree(normPrice, discount, hol){
-  let costo = 0;
   
   // Si el descuento es 0, solo dividimos el precio entre 100
-  if (discount == 0) {
-    costo = (normPrice) / 100;  
-  } else {
-    costo = (normPrice * discount) / 100;
-  }
+  costo = (discount == 0) ? (normPrice) / 100 : (normPrice * discount) / 100;
   
-  respuesta = parseInt(hol / costo);
-  return respuesta;
+  return  parseInt(hol / costo);
 }
 
 ```
