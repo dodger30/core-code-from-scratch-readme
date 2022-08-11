@@ -77,7 +77,7 @@ function getNumberFromString(s) {
 function stringClean(s){
   // Regex Expression para eliminar los numeros de la cadena
   let pattern = /[^A-Za-z ~#$%()^&*@:;"'.,!?]/g;
-  return result = (s.replace(pattern,''))
+  return s.replace(pattern,'')
 }
 
 ```
