@@ -210,7 +210,7 @@ function remove (string) {
   // Verificamos si al menos contiene el simbolo '!' al final de la cadena
   if (string.lastIndexOf("!") == string.length -1 ) {
     ultimo = string.length;
-    var i = string.length -1;
+    let i = string.length -1;
     while (i >= 0) {
        if (string[i] == "!") {
          ultimo = i; 
